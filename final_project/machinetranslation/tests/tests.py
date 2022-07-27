@@ -4,9 +4,9 @@ from translator import french_to_english , english_to_french
 
 class Test(unittest.TestCase):
     def test_french_to_english(self):
-        self.assertNotEqual(french_to_english(''), 'Stop')
+        self.assertNotEqual(french_to_english('something'), 'Stop')
     def test_english_to_french(self):
-        self.assertNotEqual(english_to_french(''), 'Bonjour')
+        self.assertNotEqual(english_to_french('somethingelse'), 'Bonjour')
     def test_english_to_french_(self):
         self.assertEqual(english_to_french("Hello"),"Bonjour")
     def test_french_to_english_(self):
